@@ -5,10 +5,15 @@ gem 'sqlite3'
 gem 'jquery-rails'
 
 group :test do
-  gem "spork-rails"
+  gem 'spork-rails'
   gem 'rspec-rails'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
+  gem 'shoulda-matchers', '1.1.0'
+end
+
+group :development do 
+  gem 'guard-spork'
 end
 
 group :assets do
